@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Reservations</title>
+     <meta charset="utf-8">
+    <meta name="description" content="Pacific Trail Resort offers a special lodging experience on the California North Coast">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="pacific.css"> 
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+<h1>Pacific Trails Resort</h1>
+      
+        </div>
+<div class="nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="yurts.html">Yurts</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+    </ul>
+</div>
+<div class="content">
+<h2>Reservations</h2>
+    
+
+    
+<form class="form1" action="contact.php" method="post">
+<label for="firstname">First Name</label><input type="text" class="myinput" required name="firstname" id="firstname"  maxlength="15"><br><br>     
+<label for="lastname">Last Name</label><input type="text" class="myinput"  required name="lastname" id="lastname"  maxlength="25">
+<br><br>
+    <label for="tel1">Telephone number</label><input type="tel" class="myinput"  name="tel1" id="tel1" required >
+    
+    <br><br> 
+  <label for="myemail">Email Address</label><input type="email" class="myinput"  required name="myemail" id="myemail" >
+<br><br> 
+ <label for="people">Number of Guests</label><input type="number" class="myinput" name="people" id="people" value="1" min="1" max="10" >
+<br><br>  
+
+    <label for="message">Message</label><textarea class="myinput" name="message" id="message" ></textarea>
+<br><br>
+<input type="submit" value="Submit Info" />&nbsp;&nbsp;&nbsp;<input type="reset" value="Clear Form" />
+  <br><br>
+    
+    
+    
+        </form>
+    
+    
+
+<div class="footer">
+<p>Copyright &copy; 2011 Pacific Trails Resort<br>
+Roman Shamaev</p>
+</div>
+        </div>
+    </div>
+</body>
+</html>
