@@ -1,0 +1,216 @@
+.wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+   box-shadow: 10px 10px darkgray;
+    
+  }
+  
+  .wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+      
+  }
+  .wrapper1 {
+    display: flex;  
+    flex-flow: row wrap;
+  width: 80%;
+  min-width: 960px;
+   box-shadow: 10px 10px darkgray;
+    
+  }
+  
+  .wrapper1 > * {
+    padding: 10px;
+    flex: 1 100%;
+      
+  }
+  
+  
+  .header {
+    background-color: #000033;
+    background-image: url("sunset.jpg");
+      background-repeat: no-repeat;
+      background-position:right;
+  }
+  
+  .footer {
+    background-color: white;
+  font-family: Georgia, Times New Roman, Times, serif;
+     font-size: 75%;
+      font-style: italic;
+       clear: left;
+  }
+  
+  .content {
+    text-align: left;
+    background-color: white;
+   
+  }
+  .content ul {
+   list-style-position: inside;
+    
+  }
+  
+  
+  .nav { 
+   background-color: skyblue;
+   font-weight: bold;
+   font-size: 1.2em;
+    
+  }
+  .nav ul {
+      list-style-type: none;
+      margin: 0; 
+      padding-left: 0; 
+  }
+  
+  .nav a {
+     text-decoration: none;
+    
+  }
+  /* unvisited link */
+  a:link {
+    color:  #000033;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #344873;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: white;
+  }
+  img {
+    float: left;
+   
+    height: 200px;
+    width: 200px;
+      margin-right:30px;
+      margin-bottom:20px;
+  }
+  
+  .contact {  
+     background-color: white;
+      font-size: 90%;
+      clear: left;
+     
+  }
+  
+  
+  @media all and (min-width: 600px) {
+      .nav { flex: 1 0 0;} 
+    .content    { flex: 3 0px; }
+    .nav { order: 1; } 
+    .content   { order: 2; }
+    .contact { order: 3; }
+    .footer  { order: 4; }
+  }
+  
+  @media (max-width: 600px){
+        img {
+      display: none;
+    }
+   .header {
+          background-image: none;
+      }
+      .wrapper1 {
+          min-width: 0px;
+          width: 100%;
+      }
+  }
+  
+  
+  
+  
+  
+  body {
+    padding: 2em; 
+     margin-top: 1%;
+      margin-left: 5%;
+      margin-right: 5%;
+      background-color: white;
+      color: darkgray;
+      background-image: url(background.jpg);
+      font-family: Helvetica, Arial, sans-serif;
+      
+  }
+  
+  h1 { color: white;
+  }
+  h1, h2, h3 {
+      font-family: Georgia, Times New Roman, serif;
+  }
+  h2 { color: #3399CC;
+  text-shadow: 2px 2px #000033;
+  }
+  
+  h3 {
+      color: #000033;
+  }
+  span {
+      color: #000033;
+      font-weight: bold;
+  }
+  
+  .bird img {
+  width: auto;
+  height: auto;
+  animation-name: slidein;
+  animation-duration: 10s;
+      animation-delay: 1s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;  
+  
+  }
+  
+  @keyframes slidein {
+    from {margin-left: 10%;}
+    to {margin-left: 80%; }
+  }
+  
+  
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  form {
+    padding: 1em;
+    background: #f9f9f9;
+    border: 1px solid black;
+    margin-top: 1rem;
+   max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  form input {
+    margin-bottom: 1rem;
+    background: white;
+    border: 1px solid #9c9c9c;
+  }
+  label {
+    text-align: right;
+    display: block;
+    padding: 0.5em 1em 0.5em 0;
+  }
+  
+  .myinput {
+    width: 100%;
+    padding: 0.4em;
+    margin-bottom: 0.1rem;
+  }
+  input:focus {
+    background-color: skyblue;
+  }
+  
+  input[type="submit"], input[type="reset"] {
+    background: lightgray;
+    padding: 0.7em;
+    border: 0;
+  }
+  
+  
